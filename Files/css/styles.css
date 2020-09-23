@@ -1,0 +1,107 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: #F5F5F5;
+}
+
+img {
+    max-width: 100%;    
+}
+
+h1 {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+/* Utilidades */
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.seccion {
+    margin: 2rem auto;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#E73C7E, #23D5AB);
+    border-radius: 6px;
+}
+
+/* Header */
+
+.logo {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 200px;
+    height: 72px;
+    margin-left: 20px;
+}
+
+.logo nav{
+    margin-right: 20px;
+}
+
+.logo nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.logo nav a:hover {
+    font-size: 20px;
+}
+
+/* Presentation */
+
+.presentation {
+    color: white;
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0/w_1551,c_limit/1c21062d-1def-4a01-8fe7-ec9926e35900/sitio-web-oficial-de-nike.jpg");
+    height: calc(100vh - 92px);
+    width: 100%;
+}
+
+.presentation div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
