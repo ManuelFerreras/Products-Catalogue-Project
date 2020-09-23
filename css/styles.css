@@ -48,6 +48,14 @@ h1 {
     font-weight: 700;
 }
 
+.fs-48 {
+    font-size: 48px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
     width: 6px;
@@ -91,17 +99,34 @@ h1 {
 
 /* Presentation */
 
+.bg-img {
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0/w_1551,c_limit/1c21062d-1def-4a01-8fe7-ec9926e35900/sitio-web-oficial-de-nike.jpg");
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .presentation {
     color: white;
-    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0/w_1551,c_limit/1c21062d-1def-4a01-8fe7-ec9926e35900/sitio-web-oficial-de-nike.jpg");
     height: calc(100vh - 92px);
     width: 100%;
 }
 
 .presentation div {
-    height: 100%;
+    height: calc(100vh - 92px);
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.contenido {
+    position: absolute;
+    top: calc(50% + 40px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
 }
