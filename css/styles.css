@@ -99,6 +99,13 @@ h1 {
     width: 200px;
     height: 72px;
     margin-left: 20px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    opacity: 1;
+    transition: 1s;
 }
 
 .logo nav{
@@ -177,6 +184,14 @@ h1 {
     transition: 0.5s ease-in-out;
 }
 
+.container .card:nth-child(2)::before {
+    background:#03A9F4;
+}
+
+.container .card:nth-child(3)::before {
+    background: #f65;
+}
+
 .container .card:hover::before {
     clip-path: circle(300px at 80% -20%);
 }
@@ -189,7 +204,7 @@ h1 {
     font-size: 12em;
     font-weight: 700;
     font-style: italic;
-        color: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.04);
 }
 
 .container .card .imgBx {
@@ -205,6 +220,7 @@ h1 {
 .container .card:hover .imgBx {
     top: 0%;
     transform: translateY(0%);
+    width: 270px;
 }
 
 .container .card .imgBx img{
@@ -289,6 +305,14 @@ h1 {
     background-color: #9BDC28;
 }
 
+.container .card:nth-child(2) .contentBx .size span:hover {
+    background-color: #03A9F4;
+}
+
+.container .card:nth-child(3) .contentBx .size span:hover {
+    background-color: #f65;
+}
+
 .container .card .contentBx .color span {
     width: 20px;
     height: 20px;
@@ -307,7 +331,7 @@ h1 {
 }
 
 .container .card .contentBx .color span:nth-child(4) {
-    background-color: #E91E63;
+    background-color: #f65;
 }
 
 .container .card .contentBx a {
