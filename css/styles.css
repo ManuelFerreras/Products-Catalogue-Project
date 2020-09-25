@@ -71,6 +71,18 @@ h1 {
     font-size: 32px;
 }
 
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
 .up {
     text-transform: uppercase;
 }
@@ -94,6 +106,15 @@ h1 {
 
 .around {
     justify-content: space-around;
+}
+
+.texto-justificado {
+    text-align: justify;
+    line-height: 30px;
+}
+
+.gray-font {
+    color: gray;
 }
 
 /* Scroll Bar */
@@ -551,4 +572,206 @@ h1 {
 
 .footer nav a:hover {
     font-size: 20px;
+}
+
+/* Contacto */
+
+fieldset {
+    border-radius: 10px;
+}
+
+.centrar-contenido{
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]), textarea{
+    padding: 10px 0 10px 5px;
+    display: block;
+    width: 100%;
+    background-color: #404040;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    color: white;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 50px 0 50px 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.contact-image {
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0/w_1551,c_limit/0818658a-3b20-48e1-aeae-0bdfb847fba5/sitio-web-oficial-de-nike.jpg");
+}
+
+.contenido-contacto {
+    color: #232323;
+}
+
+/* Nosotros */
+
+.presentation-nc {
+    height: calc(100vh - 92px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contenido-nosotros {
+    color: gray;
+}
+
+.contenido-nosotros h1 {
+    color: black;
+}
+
+/* Blog */
+
+.presentation-blog {
+    height: calc(90vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blog-left {
+    display: flex;
+    align-items: center;
+}
+
+.blog-left .contenido-blog {
+    margin-left: 80px;
+}
+
+.running-image {
+    position: relative;
+}
+
+.blog-left .running-image  img{
+    height: 550px;
+    width: 550px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+
+.blog-left .running-image::before {
+    background: #fc0d1b;
+    content: "";
+    display: block;
+    max-width: 476px;
+    max-height: 476px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 75%;
+    height: 85%;
+    z-index: 2;
+}
+
+.blog-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.blog-right .contenido-blog {
+    margin-left: 80px;
+}
+
+.blog-right .running-image  img{
+    height: 550px;
+    width: 550px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+
+.blog-right .running-image::before {
+    background: #fc0d1b;
+    content: "";
+    display: block;
+    max-width: 476px;
+    max-height: 476px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 75%;
+    height: 85%;
+    z-index: 2;
+}
+
+.contenido-blog h2 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contenido-blog h2::after {
+    background: #fc0d1b;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    width: 50px;
+    height: 2px;
+    z-index: 2;
+}
+
+/* Table */ 
+
+.content-table {
+    border-radius: 5px 5px 0 0;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 1200px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+  }
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: 1s;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+} 
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr:hover {
+    font-weight: bold;
+    color: #009879;
+    transition: 1s;
 }
