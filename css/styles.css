@@ -75,6 +75,27 @@ h1 {
     text-transform: uppercase;
 }
 
+.derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shadowing {
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.box-shadowing {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.relative {
+    position: relative;
+}
+
+.around {
+    justify-content: space-around;
+}
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
     width: 6px;
@@ -157,6 +178,12 @@ h1 {
     width: 80%;
 }
 
+/* Main Section */
+
+.main-main {
+    height: 100vh;
+}
+
 /* Cards */
 
 .container {
@@ -220,7 +247,7 @@ h1 {
 .container .card:hover .imgBx {
     top: 0%;
     transform: translateY(0%);
-    width: 270px;
+    
 }
 
 .container .card .imgBx img{
@@ -231,18 +258,24 @@ h1 {
     transform: translate(-50%, -50%) rotate(25deg);
 }
 
+.container .card .price {
+    color: white;
+    letter-spacing: 1px;
+}
+
 .container .card .contentBx {
     position: absolute;
     bottom: 10%;
     width: 100%;
     height: 100px;
     text-align: center;
-    transition: 1s;
+    transition: 1.2s;
     z-index: 10;
 }
 
 .container .card:hover .contentBx {
     height: 210px;
+    bottom: 20%;
 }
 
 .container .card .contentBx h2 {
@@ -252,6 +285,7 @@ h1 {
     color: #fff;
 }
 
+.container .card .price p,
 .container .card .contentBx .color,
 .container .card .contentBx .size {
     display: flex;
@@ -263,6 +297,7 @@ h1 {
     visibility: hidden;
 }
 
+.container .card:hover .price p,
 .container .card:hover .contentBx .size {
     opacity: 1;
     visibility: visible;
@@ -352,4 +387,168 @@ h1 {
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 0.75s;
+}
+
+/* Botón */
+
+.boton {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196F3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s; 
+    background: #232323; 
+}
+
+.boton:hover {
+    color: #255784;
+    background-color: #2196F3;
+    box-shadow: 0 0 10px #2196F3, 0 0 40px #2196F3, 0 0 80px #2196F3;
+    transition-delay: 1s;
+}
+
+.boton span {
+    position: absolute;
+    display: block;
+}
+
+.boton span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #2196F3);
+}
+
+.boton:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.boton span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #2196F3);
+}
+
+.boton:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.boton span:nth-child(2) {
+    top: -100%;
+    right: 0%;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196F3);
+}
+
+.boton:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.boton span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #2196F3);
+}
+
+.boton:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/* Fraccion Contacto */
+
+.ct-img {
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0/w_1792,c_limit/ed585669-ca55-4f9b-961d-8a8535094dfb/sitio-web-oficial-de-nike.jpg");
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contact-pr {
+    color: white;
+    height: calc(100vh);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-pr div {
+    height: calc(100vh);
+    width: 100%;
+
+}
+
+.contenido-ct {
+    position: absolute;
+    top: calc(50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+}
+
+.boton-contacto{
+    width: 180px;
+}
+
+.around-ct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Footer */
+
+.footer-container {
+    background-color: #232323;
+}
+
+.footer {
+    
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p {
+    color: #fff;
+    padding: 18px 0;
+    margin-left: 20px;
+    opacity: 1;
+}
+
+
+.footer nav{
+    margin-right: 20px;
+}
+
+.footer nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer nav a:hover {
+    font-size: 20px;
 }
