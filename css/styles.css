@@ -775,3 +775,10 @@ input[type="submit"] {
     color: #009879;
     transition: 1s;
 }
+
+.table-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
